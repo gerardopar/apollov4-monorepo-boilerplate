@@ -8,12 +8,11 @@
     "forceConsistentCasingInFileNames": true,
 
     // for monorepo
-    "baseUrl": "."
-    // "paths": {
-    //   "@my/api": ["packages/api/src"],
-    //   "@utils/*": ["apps/client/src/utils/*"],
-    //   "@components/*": ["apps/client/src/components/*"],
-    //   "@pages/*": ["apps/client/src/pages/*"]
-    // }
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["apps/client/src/components/*"],
+      "@pages/*": ["apps/client/src/pages/*"],
+      "@graphql/*": ["apps/client/src/graphql/*"]
+    }
   }
 }

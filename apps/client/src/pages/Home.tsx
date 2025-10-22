@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useHelloQuery } from "../graphql/queries/hello";
+import { useHelloQuery } from "@graphql/queries/hello";
 
 export const Home: React.FC = () => {
   const { data } = useHelloQuery({
