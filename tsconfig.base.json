@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // for monorepo
+    "baseUrl": "."
+    // "paths": {
+    //   "@my/api": ["packages/api/src"],
+    //   "@utils/*": ["apps/client/src/utils/*"],
+    //   "@components/*": ["apps/client/src/components/*"],
+    //   "@pages/*": ["apps/client/src/pages/*"]
+    // }
+  }
+}
