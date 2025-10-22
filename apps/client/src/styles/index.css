@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+/* Tailwind v4: define design tokens via @theme */
+@theme {
+}

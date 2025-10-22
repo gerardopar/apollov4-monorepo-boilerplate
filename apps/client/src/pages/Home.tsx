@@ -1,16 +1,21 @@
 import React from "react";
 
-import { useQuery } from "@apollo/client/react";
-import { HELLO_QUERY } from "../graphql/queries/hello";
+import { useHelloQuery } from "../graphql/queries/hello";
 
 export const Home: React.FC = () => {
-  const { data } = useQuery(HELLO_QUERY, {
-    variables: { name: "World" },
+  const { data } = useHelloQuery({
+    name: "World",
   });
 
-  console.log(data);
-
-  return <div></div>;
+  return (
+    <div className="h-screen flex items-center justify-center flex-col bg-gray-900">
+      <img
+        src="https://cdn.worldvectorlogo.com/logos/apollo-graphql-1.svg"
+        alt="apollo-gql"
+      />
+      <h1 className="text-white">{data?.hello}</h1>
+    </div>
+  );
 };
 
 export default Home;
