@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently \"pnpm --filter server dev\" \"pnpm --filter client dev\""
+    "dev": "concurrently \"pnpm --filter server dev\" \"pnpm --filter client dev\"",
+    "dev:watch": "concurrently -n server,client,codegen -c cyan,green,magenta \"pnpm --filter server dev\" \"pnpm --filter client dev\" \"pnpm --filter server codegen:watch\""
   },
   "keywords": [],
   "author": "",
